@@ -1,0 +1,89 @@
+    .f-section {
+        margin-bottom: 1.75rem;
+    }
+
+    .f-section p {
+        font-size: 0.8rem;
+        color: #0B1643;
+    }
+
+    .f-steps {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .f-steps::before {
+        z-index: -1;
+        position: absolute;
+        top: 18px;
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #C4C4C4;
+    }
+
+    .f-steps .f-step-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 25%;
+        text-align: center;
+    }
+
+    .f-steps .f-step-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 36px;
+        width: 36px;
+        background-size: cover;
+    }
+
+    .f-steps .f-step-1-icon {
+        background-image: url('https://demo-prestashop.klikpay.fr/wp-content/plugins/klikpay-secure/assets/etape_1.png');
+    }
+
+    .f-steps .f-step-2-icon {
+        background-image: url('https://demo-prestashop.klikpay.fr/wp-content/plugins/klikpay-secure/assets/etape_2.png');
+    }
+
+    .f-steps .f-step-3-icon {
+        background-image: url('https://demo-prestashop.klikpay.fr/wp-content/plugins/klikpay-secure/assets/etape_3.png');
+    }
+
+    .f-steps .f-step-img {
+        height: 20px;
+        width: 20px;
+        background-size: cover;
+    }
+
+    @media screen and (max-width: 640px) {
+        .f-steps {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .f-steps::before {
+            top: 0;
+            left: 18px;
+            height: 100%;
+            width: 1px;
+        }
+
+        .f-steps .f-step-wrapper {
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            max-width: initial;
+            text-align: left;
+        }
+
+        .f-steps .f-step-icon {
+            margin: 0;
+            flex-shrink: 0;
+        }
+    }
+  
